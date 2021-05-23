@@ -1,7 +1,44 @@
 .App {
   text-align: center;
+ /* background:url("/src/book_back.jpg");*/
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden
+}
+.container
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.book
+{
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 6px 10px 0 rgb(0 0 0 / 0.4);
+  width:30%;
+ /* height: auto; */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.book h1{
+  
+  justify-content: center;
 }
 
+.book-img
+{
+  height: 60%;
+  width: 60%;
+  border-radius: 12%;
+  align-self: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,12 +64,15 @@
 .App-link {
   color: #61dafb;
 }
+.head-con
+{
+background-color: #133e92;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+ul{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
 }
